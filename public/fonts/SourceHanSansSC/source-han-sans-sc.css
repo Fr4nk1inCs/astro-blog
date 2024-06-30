@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Source Han Sans SC Variable";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("SourceHanSansSC-VF.otf.woff2") format("woff2");
+}
+
+/* static fonts */
+@font-face {
+  font-family: "Source Han Sans SC";
+  font-style: normal;
+  font-weight: 250;
+  font-display: swap;
+  src: url("SourceHanSansSC-ExtraLight.otf.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Han Sans SC";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("SourceHanSansSC-Light.otf.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Han Sans SC";
+  font-style: normal;
+  font-weight: 350;
+  font-display: swap;
+  src: url("SourceHanSansSC-Normal.otf.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Han Sans SC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("SourceHanSansSC-Regular.otf.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Han Sans SC";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("SourceHanSansSC-Medium.otf.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Han Sans SC";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("SourceHanSansSC-Bold.otf.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Han Sans SC";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("SourceHanSansSC-Heavy.otf.woff2") format("woff2");
+}

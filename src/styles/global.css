@@ -1,0 +1,215 @@
+@import url("/fonts/Inter/inter.css");
+@import url("/fonts/SourceHanSansSC/source-han-sans-sc.css");
+@import url("/fonts/MapleMonoNFCN/maple-mono-nf-cn.css");
+
+:root {
+  /* Nord Palette (R G B) */
+  --nord0: 46 52 64; /* #2e3440 */
+  --nord1: 59 66 82; /* #3b4252 */
+  --nord2: 67 76 94; /* #434c5e */
+  --nord3: 76 86 106; /* #4c566a */
+  --nord4: 216 222 233; /* #d8dee9 */
+  --nord5: 229 233 240; /* #e5e9f0 */
+  --nord6: 236 239 244; /* #eceff4 */
+  --nord7: 143 188 187; /* #8fbcbb */
+  --nord8: 136 192 208; /* #88c0d0 */
+  --nord9: 129 161 193; /* #81a1c1 */
+  --nord10: 94 129 172; /* #5e81ac */
+  --nord11: 191 97 106; /* #bf616a */
+  --nord12: 208 135 112; /* #d08770 */
+  --nord13: 235 203 139; /* #ebcb8b */
+  --nord14: 163 190 140; /* #a3be8c */
+  --nord15: 180 142 173; /* #b48ead */
+
+  /* Colors */
+  --black: var(--nord0);
+  --white: var(--nord6);
+  --gray: var(--nord3);
+
+  --red: var(--nord11);
+  --orange: var(--nord12);
+  --yellow: var(--nord13);
+  --green: var(--nord14);
+
+  --cyan: var(--nord7);
+  --blue-light: var(--nord8);
+  --blue: var(--nord9);
+  --blue-dark: var(--nord10);
+
+  --bg0: var(--nord6);
+  --bg1: var(--nord4);
+  --bg2: var(--nord5);
+  --fg0: var(--nord0);
+  --fg1: var(--nord3);
+  --fg2: var(--nord2);
+
+  --accent: var(--blue-dark);
+
+  --alpha-special-bg: 7.5%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg0: var(--nord0);
+    --bg1: var(--nord1);
+    --bg2: var(--nord2);
+    --fg0: var(--nord6);
+    --fg1: var(--nord3);
+    --fg2: var(--nord4);
+
+    --accent: var(--blue-light);
+
+    --alpha-special-bg: 10%;
+  }
+}
+
+body {
+  font-family: "Inter", "Source Han Sans SC", sans-serif;
+  font-size: 20px;
+  line-height: 1.7;
+  text-align: justify;
+
+  word-break: normal;
+  overflow-wrap: break-word;
+
+  color: rgb(var(--fg0));
+  background: rgb(var(--bg0));
+
+  margin: 0;
+  padding: 0;
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: "InterVariable", "Source Han Sans SC Variable", sans-serif;
+    font-optical-sizing: auto;
+  }
+}
+
+/* Markdown Style Settings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.052em;
+}
+
+h2 {
+  font-size: 2.441em;
+}
+
+h3 {
+  font-size: 1.953em;
+}
+
+h4 {
+  font-size: 1.563em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+a {
+  color: rgb(var(--accent));
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(var(--fg0) / var(--alpha-special-bg));
+  border-radius: 0.25em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.prose p {
+  margin-bottom: 2em;
+}
+
+textarea {
+  width: 100%;
+  font-size: 16px;
+}
+
+input {
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+code {
+  padding: 2px 4px;
+  background-color: rgb(var(--fg0) / var(--alpha-special-bg));
+  font-family: "Maple Mono NF CN";
+  font-size: calc(1em - 2px);
+  border-radius: 0.25em;
+}
+
+pre {
+  padding: 1.5em;
+  border-radius: 8px;
+}
+
+pre > code {
+  all: unset;
+}
+
+blockquote {
+  border-left: 4px solid rgb(var(--accent));
+  padding-left: 20px;
+  margin: 0px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgb(var(--gray));
+}
+
+@media (max-width: 720px) {
+  body {
+    font-size: 18px;
+  }
+  main {
+    padding: 1em;
+  }
+}
+
+.sr-only {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+  clip: rect(1px 1px 1px 1px);
+  /* maybe deprecated but we need to support legacy browsers */
+  clip: rect(1px, 1px, 1px, 1px);
+  /* modern browsers, clip-path works inwards from each corner */
+  clip-path: inset(50%);
+  /* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
+  white-space: nowrap;
+}

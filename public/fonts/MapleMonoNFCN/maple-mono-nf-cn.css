@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Maple Mono NF CN";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("MapleMono-NF-CN-Thin.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Maple Mono NF CN";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("MapleMono-NF-CN-ThinItalic.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Maple Mono NF CN";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("MapleMono-NF-CN-ExtraLight.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Maple Mono NF CN";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("MapleMono-NF-CN-ExtraLightItalic.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Maple Mono NF CN";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("MapleMono-NF-CN-Light.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Maple Mono NF CN";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("MapleMono-NF-CN-LightItalic.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Maple Mono NF CN";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("MapleMono-NF-CN-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Maple Mono NF CN";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("MapleMono-NF-CN-Italic.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Maple Mono NF CN";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("MapleMono-NF-CN-Medium.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Maple Mono NF CN";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("MapleMono-NF-CN-MediumItalic.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Maple Mono NF CN";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("MapleMono-NF-CN-SemiBold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Maple Mono NF CN";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("MapleMono-NF-CN-SemiBoldItalic.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Maple Mono NF CN";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("MapleMono-NF-CN-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Maple Mono NF CN";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("MapleMono-NF-CN-BoldItalic.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Maple Mono NF CN";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("MapleMono-NF-CN-ExtraBold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Maple Mono NF CN";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("MapleMono-NF-CN-ExtraBoldItalic.ttf") format("ttf");
+}
