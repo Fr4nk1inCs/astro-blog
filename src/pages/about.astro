@@ -1,0 +1,80 @@
+---
+import "../styles/global.css";
+
+const pageTitle = "About Me";
+
+interface ContactItem {
+  name: string;
+  url: string;
+  value: string;
+}
+
+function githubUser(username: string): ContactItem {
+  return {
+    name: "GitHub",
+    url: `https://github.com/${username}`,
+    value: username,
+  };
+}
+
+function mailAddress(address: string): ContactItem {
+  return {
+    name: "Email",
+    url: `mailto:${address}`,
+    value: address,
+  };
+}
+
+function homepage(link: string): ContactItem {
+  return {
+    name: "Homepage",
+    url: `https://${link}`,
+    value: link,
+  };
+}
+
+const contacts: ContactItem[] = [
+  homepage("fr4nk1in.top"),
+  mailAddress("fushen@mail.ustc.edu.cn"),
+  githubUser("Fr4nk1inCs"),
+];
+---
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <h1>{pageTitle}</h1>
+    <p>
+      Hi! I'm Shen Fu (傅申). I'm a graduate student at
+      <a href="https://adsl.ustc.edu.cn/">ADSLab</a>
+      at <a href="https://www.ustc.edu.cn/">USTC</a>. Currently I'm exploring
+      the field of machine learning systems, especially the system optimization
+      and acceleration for LLM inference.
+    </p>
+    <h2>Education</h2>
+    <ul>
+      <li>
+        2020.09 - 2024.06: B.E. in Computer Science and Technology, University
+        of Science and Technology of China, Anhui, China
+      </li>
+      <li>
+        2024.09 - Present: M.E. in Computer Science and Technology, University
+        of Science and Technology of China, Anhui, China
+      </li>
+    </ul>
+    <h2>Contact</h2>
+    <ul>
+      {
+        contacts.map((contact) => (
+          <li>
+            {contact.name}: <a href={contact.url}>{contact.value}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </body>
+</html>
